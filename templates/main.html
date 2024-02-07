@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %} Online Shop<{% endblock %} 
+    </title>
+</head>
+<body>
+    {% block content %}
+    <header>
+        <h1>Online Shop</h1>
+    </header>
+    <nav>
+        
+        <li><a href="{{ url_for('coats_') }}">coats</a></li>
+        <li><a href="{{ url_for('shoes_') }}">Shoes</a></li>
+        <li><a href="{{ url_for('clothes_') }}">Clothes</a></li>
+        
+    </nav>
+    
+    {% endblock %}
+
+</body>
+</html>
